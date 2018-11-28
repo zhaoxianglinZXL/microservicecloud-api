@@ -1,0 +1,25 @@
+drop DATABASE if exists cloudDB01;
+CREATE DATABASE cloudDB01 CHARACTER set utf8 comment 'springcloud练习一库';
+
+use cloudDB01;
+
+DROP TABLE IF EXISTS DEPT;
+CREATE TABLE DEPT  comment '部门表'(
+	DEPTNO INT NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT '主键',
+	DNAME VARCHAR(200) not null UNIQUE comment '部门名称',
+	DB_SOURCE VARCHAR(500) comment '该表所在的库'
+)
+
+insert into DEPT(DNAME,DB_SOURCE) values('开发部',DATABASE());
+insert into DEPT(DNAME,DB_SOURCE) values('人事部',DATABASE());
+insert into DEPT(DNAME,DB_SOURCE) values('财务部',DATABASE());
+insert into DEPT(DNAME,DB_SOURCE) values('市场部',DATABASE());
+insert into DEPT(DNAME,DB_SOURCE) values('运维部',DATABASE());
+
+-- sqlserver中是两个点  mysql中是一个点
+
+TRUNCATE dept  -- 删除表
+
+
+SELECT * FROM cloudDB01.dept
+
