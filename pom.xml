@@ -20,6 +20,12 @@
 		</dependency>
 		<!-- <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-feign</artifactId> 
 			</dependency> -->
+			
+		<!-- 添加Feign配置相关的  为了添加feign相关的公共api -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
 	</dependencies>
 
 </project>
