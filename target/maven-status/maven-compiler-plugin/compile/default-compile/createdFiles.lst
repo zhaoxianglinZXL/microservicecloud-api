@@ -1,2 +1,4 @@
-com\winner\springcloud\service\DeptClientService.class
+com\winner\springcloud\service\DeptClientServiceFallbackFactory.class
 com\winner\springcloud\model\DeptInfo.class
+com\winner\springcloud\service\DeptClientServiceFallbackFactory$1.class
+com\winner\springcloud\service\DeptClientService.class

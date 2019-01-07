@@ -3,14 +3,16 @@ package com.winner.springcloud.model;
 import java.io.Serializable;
 
 public class DeptInfo implements Serializable{// entity --orm--- db_table
-	private Long 	deptno; // 主键
+	private int 	deptno; // 主键
 	private String 	dname; // 部门名称
 	private String 	db_source;// 来自那个数据库，因为微服务架构可以一个服务对应一个数据库，同一个信息被存储到不同数据库
 	
-	public Long getDeptno() {
+
+	
+	public int getDeptno() {
 		return deptno;
 	}
-	public void setDeptno(Long deptno) {
+	public void setDeptno(int deptno) {
 		this.deptno = deptno;
 	}
 	public String getDname() {
@@ -25,7 +27,7 @@ public class DeptInfo implements Serializable{// entity --orm--- db_table
 	public void setDb_source(String db_source) {
 		this.db_source = db_source;
 	}
-	public DeptInfo(Long deptno, String dname, String db_source) {
+	public DeptInfo(int deptno, String dname, String db_source) {
 		super();
 		this.deptno = deptno;
 		this.dname = dname;
